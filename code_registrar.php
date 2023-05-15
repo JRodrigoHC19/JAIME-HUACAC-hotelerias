@@ -16,7 +16,7 @@ $telf = $_POST['txtTELF'];
 $state = $_POST['txtSTATE'];
 
 $sentencia = $database->prepare("INSERT INTO registerhotel(title,star,ub_1,ub_2,ub_3,telf,date_ins,estado) VALUES (?,?,?,?,?,?,?,?);");
-$resultado = $sentencia->execute([$titulo, $categoria, $ubi_1, $ubi_2, $ubi_3, $telf, $date_ins, $state]);
+$resultado = $sentencia->execute($titulo, $categoria, $ubi_1, $ubi_2, $ubi_3, $telf, $date_ins, $state);
 
 if ($resultado === TRUE) {
     header('Location: index.php?mensaje=registrado');
