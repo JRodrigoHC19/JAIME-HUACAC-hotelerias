@@ -17,8 +17,8 @@
     $resultado = $sentencia->execute([$titulo, $categoria, $ubi_1, $ubi_2, $ubi_3, $date_ins, $telf, $state, $codigo]);
 
     if ($resultado == TRUE) {
-        header('Location: index.php?mensaje=editado');
+        header('Location:app/index.php?mensaje=editado');
     } else {
-        header('Location: index.php?mensaje=error');
+        header('Location:app/index.php?mensaje=error');
         exit();
     }
