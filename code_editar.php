@@ -17,8 +17,8 @@
     $resultado = $sentencia->execute([$titulo, $categoria, $ubi_1, $ubi_2, $ubi_3, $date_ins, $telf, $state, $codigo]);
 
     if ($resultado == TRUE) {
-        header('Location: https://jaime-huacac-hotelerias-production.up.railway.app/index.php?mensaje=editado');
+        header('Location: index.php?mensaje=editado');
     } else {
-        header('Location: https://jaime-huacac-hotelerias-production.up.railway.app/index.php?mensaje=error');
+        header('Location: index.php?mensaje=error');
         exit();
     }
