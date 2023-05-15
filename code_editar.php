@@ -1,6 +1,6 @@
 <?php
     print_r($_POST);
-    if(!isset($_POST['id'])){header('Location: index.php?mensaje=error');}
+    if(!isset($_POST['id'])){header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=error');}
 
     include 'conectando/conexion.php';
     $codigo = $_POST['id'];
