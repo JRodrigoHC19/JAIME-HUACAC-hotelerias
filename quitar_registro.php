@@ -1,6 +1,6 @@
 <?php 
     if(!isset($_GET['id'])){
-        header('Location: index.php?mensaje=error');
+        header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=error');
         exit();
     }
 
@@ -11,9 +11,9 @@
     $resultado = $sentencia->execute([$id]);
 
     if ($resultado === TRUE) {
-        header('Location: index.php?mensaje=eliminado');
+        header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=eliminado');
     } else {
-        header('Location: index.php?mensaje=error');
+        header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=error');
     }
     
 ?>
