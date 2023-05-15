@@ -13,8 +13,8 @@ try {
     // $database = new PDO ('mysql:host=containers-us-west-74.railway.app;por=7433;dbname='.$db_name, $user,$pwd,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
     // $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // $database = new PDO ("mysql://root:zOAssqYyoHpzomsCulUD@containers-us-west-201.railway.app:5664/railway");
-    $database = new PDO ($URL);
+    $database = new PDO ("mysql://root:zOAssqYyoHpzomsCulUD@containers-us-west-201.railway.app:5664/railway");
+    // $database = new PDO ($URL);
     // echo "Connected Successfully";
 } catch (Exception $e) {
     echo "Ocurrió un problema con la conexion: ".$e->getMessage();
