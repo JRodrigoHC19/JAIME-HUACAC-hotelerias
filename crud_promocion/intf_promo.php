@@ -66,7 +66,7 @@ $promocion = $sentencia_promocion->fetchAll(PDO::FETCH_OBJ);
                     <td><?php echo $dato->promocion; ?></td>
                     <td><?php echo $dato->duracion; ?></td>
                     <td><?php echo $dato->celular; ?></td>
-                    <td><a class="text-primary" href="../mensajes/code_enviar.php?codigo=<?php echo $dato->id_promo ?>"><i class="bi bi-cursor"></i></a></td>
+                    <td><a class="text-primary" href="./mensajes/code_enviar.php?codigo=<?php echo $dato->id_promo ?>"><i class="bi bi-cursor"></i></a></td>
                 </tr>
                 <?php }?>
             </tbody>
