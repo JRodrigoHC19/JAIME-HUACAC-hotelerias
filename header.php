@@ -13,7 +13,7 @@
 <body>
     <div class='container-fluid text-white bg-primary'>
             <div class='d-flex justify-content-between'>      
-                <div class="fs-3"><a style="text-decoration: None;" class="text-white" href="http://hoteleria.test/index.php">Gestión de Hotelerias</a></div>
+                <div class="fs-3"><a style="text-decoration: None;" class="text-white" href="https://jaime-huacac-hotelerias-production.up.railway.app/">Gestión de Hotelerias</a></div>
                 <div class='d-flex align-items-center'>
                     <div class="fs-5"><?php date_default_timezone_set('America/Lima'); setlocale(LC_ALL, 'spanish'); echo date("d - m - Y");?>  |  ADMIN</div>
                 </div>        
