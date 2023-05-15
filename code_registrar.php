@@ -19,8 +19,8 @@ $sentencia = $database->prepare("INSERT INTO registerhotel(title,star,ub_1,ub_2,
 $resultado = $sentencia->execute([$titulo, $categoria, $ubi_1, $ubi_2, $ubi_3, $telf, $date_ins, $state]);
 
 if ($resultado === TRUE) {
-    header('Location: https://jaime-huacac-hotelerias-production.up.railway.app/p?mensaje=registrado');
+    header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=registrado');
 } else {
-    header('Location: https://jaime-huacac-hotelerias-production.up.railway.app/?mensaje=error');
+    header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=error');
     exit();
 }
