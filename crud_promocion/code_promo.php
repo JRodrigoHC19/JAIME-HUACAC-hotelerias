@@ -9,4 +9,4 @@ $celular = $_POST["txtCel"];
 $sentencia = $database->prepare("INSERT INTO promociones(promocion,duracion,celular,id_hotel) VALUES (?,?,?,?);");
 $resultado = $sentencia->execute([$promocion,$duracion,$celular, $codigo ]);
 
-if ($resultado == TRUE) { header('Location: intf_promo.php?id='.$codigo); }
+if ($resultado === TRUE) { header('Location: intf_promo.php?id='.$codigo); }
