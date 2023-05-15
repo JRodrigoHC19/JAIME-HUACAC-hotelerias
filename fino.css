@@ -1,0 +1,22 @@
+.ying {
+    background-color: rgb(175, 203, 235);
+    font-style: italic;
+ }
+
+ .yang{
+    background-color: rgb(70, 110, 110);
+    font-style: italic
+ }
+ 
+.text-color-0{
+    color: aliceblue;
+ }
+ 
+ 
+ .texto-10{
+    background-color: blue;
+ }
+
+ body {
+   margin: 0;
+ }
