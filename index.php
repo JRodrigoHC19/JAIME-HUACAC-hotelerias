@@ -2,7 +2,7 @@
 
 <!-- CONECTANDO CON LA BASE DE DATOS -->
 <?php
-    include_once "conectando/conexion.php";
+    include_once "./conectando/conexion.php";
     $sentencia = $database -> query("SELECT * FROM registerhotel");
     $resultado = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
