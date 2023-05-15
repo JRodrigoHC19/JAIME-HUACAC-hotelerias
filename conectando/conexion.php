@@ -13,7 +13,7 @@ try {
 
     // $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // $database = new PDO ("mysql://root:zOAssqYyoHpzomsCulUD@containers-us-west-201.railway.app:5664/railway");
-    $database = new PDO ("${{MySQL.MYSQL_URL}}");
+    $database = new PDO (${{MySQL.MYSQL_URL}});
     // echo "Connected Successfully";
 } catch (Exception $e) {
     echo "Ocurrió un problema con la conexion: ".$e->getMessage();
