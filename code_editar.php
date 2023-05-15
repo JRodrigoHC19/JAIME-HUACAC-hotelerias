@@ -1,5 +1,5 @@
 <?php
-    print_r($_POST);
+//     print_r($_POST);
     if(!isset($_POST['id'])){header('Location: https://jaime-huacac-hotelerias-production.up.railway.app?mensaje=error');}
 
     include 'conectando/conexion.php';
