@@ -12,7 +12,7 @@ $sentencia1 = $database->prepare("SELECT * FROM registerhotel WHERE id = ?;");
 $sentencia1->execute([$hotel_id]);
 $hotelito_seleccionado = $sentencia1->fetch(PDO::FETCH_OBJ);
 
-    $url = "https://api.green-api.com/waInstance1101820990/SendMessage/3f170dc3272944d78b964c61e27200d4d27ef6fb35494479b2";
+    $url = "https://api.green-api.com/waInstance1101822972/SendMessage/73eb30504f484d268665e0c1f1e96bae7e022f6ab2a242669c";
     $data = [
         "chatId" => "51".$hotel->celular."@c.us",
         "message" =>  'Solo *'.strtoupper($hotel->duracion).'* el Hotel *'.strtoupper($hotelito_seleccionado->title).'* te ofrece una promoción indicando que: *'.strtoupper($hotel->promocion).'*.'
